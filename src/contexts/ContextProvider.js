@@ -8,12 +8,12 @@ import React,{createContext,useContext,useState} from'react';
     }
 
     export const ContextProvider=({children})=>{
-        const[activeMenu,setActiveMenu]=useState
-        (true);
+        const[activeMenu,setActiveMenu]=useState(true);
        return(
          <StateContext.Provider
             value={{
               activeMenu,
+              setActiveMenu
             }}
           >
             {children}
