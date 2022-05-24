@@ -9,11 +9,21 @@ import React,{createContext,useContext,useState} from'react';
 
     export const ContextProvider=({children})=>{
         const[activeMenu,setActiveMenu]=useState(true);
+        const [isClicked,setIsClicked]=useState(initialstate);
+        const [screenSize,setScreenSize] = useState(undefined);
+        const handleClick = (clicked)=>{
+            setIsClicked({...initialstate,[clicked]:true})
+        }
        return(
          <StateContext.Provider
             value={{
               activeMenu,
-              setActiveMenu
+              setActiveMenu,
+              isClicked,
+              setIsClicked,
+              handleClick,
+              screenSize,
+              setScreenSize
             }}
           >
             {children}
