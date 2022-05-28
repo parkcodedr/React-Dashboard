@@ -25,7 +25,7 @@ const Sidebar = () => {
        className="items-center gap-3 ml-3 
        mt-4 flex text-x1 font-extrabold dark:text-white 
        tracking-tight text-slate-900">
-         <SiShopware/><span>Wavi</span>
+         <SiShopware/><span>TravelLab</span>
        </Link>
        <button type="button" onClick={()=>setActiveMenu(!activeMenu)}
         className="text-xl rounded-full p-3 hover:bg-light-gray 
