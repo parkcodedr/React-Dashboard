@@ -37,7 +37,6 @@ const App=()=> {
             <Navbar/>
             </div>
         
-
             <div>
             <Routes>
                     {/*Dashboard*/}

@@ -22,7 +22,7 @@ const Sidebar = () => {
   {activeMenu &&(<>
     <div className="flex justify-between items-center">
        <Link to="/"onClick={handleCloseSideBar} 
-       className="items-center gap-3 ml-3 
+       className="items-center gap-3 ml-3
        mt-4 flex text-x1 font-extrabold dark:text-white 
        tracking-tight text-slate-900">
          <SiShopware/><span>TravelLab</span>
