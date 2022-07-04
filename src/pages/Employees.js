@@ -1,10 +1,11 @@
 import React from 'react';
 import { GridComponent, Inject, ColumnsDirective, ColumnDirective, Search, Page } from '@syncfusion/ej2-react-grids';
-
+import { useStateContext } from '../contexts/ContextProvider';
 import { employeesData, employeesGrid } from '../data/dummy';
 import { Header } from '../components';
 
 const Employees = () => {
+  const {currentColor} = useStateContext();
   const toolbarOptions = ['Search'];
 
   const editing = { allowDeleting: true, allowEditing: true };
