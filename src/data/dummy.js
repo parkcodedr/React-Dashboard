@@ -903,6 +903,7 @@ export const ordersGrid = [
     field: 'OrderItems',
     textAlign: 'Center',
     width: '120',
+    height:'120'
   },
   {
     field: 'OrderID',
