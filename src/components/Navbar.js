@@ -5,6 +5,7 @@ import{FiShoppingCart} from'react-icons/fi';
 import {BsChatLeft} from'react-icons/bs';
 import{RiNotification3Line}from'react-icons/ri';
 import {MdKeyboardArrowDown} from'react-icons/md';
+import { Dropdown } from 'rsuite';
 
 import avatar from '../data/avatar.jpg';
 import {Cart,Chat,Notification,UserProfile} from'.';
@@ -78,6 +79,7 @@ useEffect(()=>{
     <span className="text-gray-400 font-bold ml-1 text-14">
       Michael </span>
   </p>
+
   <MdKeyboardArrowDown 
   className="text-gray-400 text-14" />
 </div>

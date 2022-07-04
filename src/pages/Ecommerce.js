@@ -14,7 +14,7 @@ const Ecommerce = () => {
     <div className="mt-12">
       <div className="flex flex-wrap lg:flex-nowrap justify-center">
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg
-        h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat
+        h-44 rounded-xl w-full lg:w-56 p-4 pt-9 m-2 bg-hero-pattern bg-no-repeat
         bg-cover bg-center">
           <div className="flex justify-between items-center">
             <div>
@@ -35,10 +35,10 @@ const Ecommerce = () => {
           </div>
 
         </div>
-        <div className="flex m-3 flex-wrap  gap-1 justify-center items-center">
+        <div className="flex m-1 flex-wrap  gap-1 justify-center items-center">
         {earningData.map(item=>(
           <div key={item.title} className="bg-white h-44 dark:text-gray-200
-           dark:bg-secondary-dark-bg md:w-56  p-4 pt-9 rounded-2xl">
+           dark:bg-secondary-dark-bg md:w-48  p-4 pt-9 rounded-2xl">
             <button type="button"
             style={{color:item.iconColor,backgroundColor:item.iconBg}}
             className="text-2xl rounded-full p-4 opacity-0.9 hover:drop-shadow-xl"
@@ -83,13 +83,54 @@ const Ecommerce = () => {
 
           <div className="mt-10 flex gap-10 flex-wrap justify-center">
             <div className="border-r-1 border-color m-4 pr-10">
-              <div className="">
+              <div>
                 <p>
                   <span className="text-3xl font-semibold">$954,56</span>
-                  <span className="p-1.5 hover:drop-shadow-xl cursor-pointer rounded-full text-white bg-green-400 ml-3 text-xs">32%</span>
+                  <span className="p-1.5 hover:drop-shadow-xl cursor-pointer 
+                  rounded-full text-white bg-green-400 ml-3 text-xs">32%</span>
                 </p>
+                <p className="text-gray-500 mt-1">Budget</p>
 
               </div>
+
+              <div className='mt-8'>
+                <p>
+                  <span className="text-3xl font-semibold">$54,56</span>
+                 
+                </p>
+                <p className="text-gray-500 mt-1">Expense</p>
+
+              </div>
+              <section className='mt-5'>
+                <SparkLine
+                currentColor="blue"
+                id="line-sparkline"
+                type="Line"
+                height="80px" 
+                width="250px"
+                data={SparklineAreaData}
+                color="blue"
+                />
+              </section>
+
+              <div className='mt-10'>
+                <Button
+                color='white'
+                bgColor='blue'
+                text='Download Report'
+                borderRadius='10px'
+                />
+
+              </div>
+
+            </div>
+            <Stacked
+            width="320px"
+            height="360px"
+            />
+
+            <div >
+
             </div>
 
           </div>
