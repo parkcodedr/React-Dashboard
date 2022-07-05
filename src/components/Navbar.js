@@ -1,5 +1,5 @@
 
-import React,{useEffect}from'react';
+import React,{useEffect,useRef}from'react';
 import{AiOutlineMenu} from 'react-icons/ai';
 import{FiShoppingCart} from'react-icons/fi';
 import {BsChatLeft} from'react-icons/bs';
