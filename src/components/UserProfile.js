@@ -7,19 +7,20 @@ import { useStateContext } from '../contexts/ContextProvider';
 import avatar from '../data/avatar.jpg';
 
 const UserProfile = () => {
-  const { currentColor } = useStateContext();
+  const { currentColor,handleClick } = useStateContext();
 
   return (
-    <div className="nav-item absolute right-1 top-16 bg-white dark:bg-[#42464D] p-4 rounded-lg w-42">
+    <div className="nav-item absolute right-1 top-16 bg-white dark:bg-[#42464D] p-4 rounded-lg w-46">
       <div className="flex justify-between items-center">
         <p className="font-semibold text-md dark:text-gray-200">User Profile</p>
-        <Button
-          icon={<MdOutlineCancel />}
-          color="rgb(153, 171, 180)"
-          bgHoverColor="light-gray"
-          size="2xl"
-          borderRadius="50%"
-        />
+        <button
+            type="button"
+            onClick={() => handleClick('close')}
+            style={{ color: 'rgb(153, 171, 180)', borderRadius: '50%' }}
+            className="text-1xl p-3 hover:drop-shadow-md hover:bg-light-gray"
+          >
+            <MdOutlineCancel />
+          </button>
       </div>
       <div className="flex gap-2 items-center mt-6 border-color border-b-1 pb-6">
         <img
