@@ -118,7 +118,7 @@ const Ecommerce = () => {
               <div className='mt-10'>
                 <Button
                 color='white'
-                bgColor='blue'
+                bgColor={currentColor}
                 text='Download Report'
                 borderRadius='10px'
                 />
